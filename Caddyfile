@@ -1,0 +1,31 @@
+{$PROMISE_KEEPER_HOST} {
+	basic_auth {
+		{$PROMISE_KEEPER_PROXY_USER} {$PROMISE_KEEPER_PROXY_PASSWORD_HASH}
+	}
+
+	@invalid_write_origin {
+		not method GET HEAD OPTIONS
+		not header Origin https://{$PROMISE_KEEPER_HOST}
+	}
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+		X-Frame-Options DENY
+		Cache-Control "private, no-store"
+	}
+
+	@api path /api /api/*
+	handle @invalid_write_origin {
+		respond 403
+	}
+	handle @api {
+		reverse_proxy 127.0.0.1:8000 {
+			header_up -Authorization
+		}
+	}
+	handle {
+		root * ./frontend/dist
+		file_server
+	}
+}

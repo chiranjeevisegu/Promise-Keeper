@@ -1,0 +1,5 @@
+transformers>=4.51,<5
+peft>=0.15,<0.22
+pyarrow>=18
+scikit-learn>=1.6
+matplotlib>=3.10,<4

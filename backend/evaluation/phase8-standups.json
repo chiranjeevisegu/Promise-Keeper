@@ -1,0 +1,120 @@
+{
+  "review_method": "User-supplied event notes made before model scoring. Timestamp anchors were aligned against the Whisper transcripts. These are selected reference events, not exhaustive labels. Speakers were not diarized.",
+  "recordings": {
+    "T8GcCl8w-_E": {
+      "title": "A Real Daily Standup Meeting Example",
+      "url": "https://youtu.be/T8GcCl8w-_E",
+      "language": "English",
+      "auto_detect_note": "Whisper automatic language selection produced Dutch text for this audio. The English override was reviewed separately.",
+      "references": [
+        {
+          "event": "Draft-to-tentative naming bug",
+          "owner": "Tim",
+          "task": "Contact the customer to reproduce the naming issue and compare staging and production package versions.",
+          "deadline": "End of the current working day",
+          "decision": "unresolved",
+          "starts": [210.25, 214.77],
+          "review_note": "The transcript supports the proposed investigation and version question. It does not establish Tim's acceptance or the end-of-day deadline in this exchange."
+        },
+        {
+          "event": "V-Matrix device upgrade support",
+          "owner": "Unnamed developer, coordinating with Uwe and Tim",
+          "task": "Review the customer's email for a possible missing upgrade step.",
+          "deadline": "Immediately after the standup",
+          "decision": "commitment",
+          "starts": [275.57],
+          "review_note": "The email review and later parking-lot discussion are adjacent actions. Treat the developer's name and exact timing for the email review as unverified."
+        }
+      ],
+      "english_references": [
+        {
+          "event": "Draft-to-tentative naming bug",
+          "owner": "Tim",
+          "task": "Contact the customer to reproduce the naming issue and compare staging and production package versions.",
+          "deadline": "End of the current working day",
+          "decision": "unresolved",
+          "starts": [210.17, 214.81, 227.69],
+          "review_note": "The English narration attributes the proposal to Tim. The exchange does not establish that he accepted ownership or committed to an end-of-day deadline."
+        },
+        {
+          "event": "V-Matrix device upgrade support",
+          "owner": "Unnamed developer, coordinating with Uwe and Tim",
+          "task": "Review the customer's email for a possible missing upgrade step.",
+          "deadline": "Immediately after the standup",
+          "decision": "commitment",
+          "starts": [275.53],
+          "review_note": "The English transcript explicitly supports reviewing the email and checking with colleagues. The after-meeting follow-up is explicit separately, and the email review itself has no verified due time."
+        }
+      ]
+    },
+    "MsxcpZr1LpM": {
+      "title": "English for Developers: Real Daily Stand-up Meeting",
+      "url": "https://youtu.be/MsxcpZr1LpM",
+      "language": "English",
+      "references": [
+        {
+          "event": "Clarify client security requirements",
+          "owner": "Henry and John",
+          "task": "Meet at Henry's desk to clarify missing authentication requirements.",
+          "deadline": "Immediately after the standup",
+          "decision": "commitment",
+          "starts": [100.58],
+          "review_note": "The same segment contains both the invitation and the acknowledgment. The participants are identified from the surrounding conversation."
+        },
+        {
+          "event": "Investigate password reset bug",
+          "owner": "John",
+          "task": "Debug the intermittent missing reset email and report back.",
+          "deadline": "Later today",
+          "decision": "commitment",
+          "starts": [139.22],
+          "review_note": "The promise says 'later'. 'Today' is inferred from the surrounding question about the day's work."
+        },
+        {
+          "event": "Push initial UI components to staging",
+          "owner": "Evan",
+          "task": "Push a testable version of the new dashboard components to staging.",
+          "deadline": "This afternoon",
+          "decision": "commitment",
+          "starts": [244.82],
+          "review_note": "The planned review tomorrow afternoon is separate from the staging push."
+        },
+        {
+          "event": "Prepare bundle-size data and arrange a performance discussion",
+          "owner": "Evan",
+          "task": "Gather performance data and arrange a deep-dive discussion with performance experts.",
+          "deadline": "Later this week",
+          "decision": "commitment",
+          "starts": [319.54],
+          "review_note": "The timing applies to arranging the discussion. The separate earlier proposal does not establish acceptance."
+        },
+        {
+          "event": "Send automated QA test report",
+          "owner": "Mia",
+          "task": "Send the full QA report covering profile-update edge cases.",
+          "deadline": "This afternoon",
+          "decision": "commitment",
+          "starts": [341.54]
+        },
+        {
+          "event": "Finalize dashboard end-to-end tests",
+          "owner": "Mia and the QA team",
+          "task": "Get the end-to-end dashboard tests ready for review.",
+          "deadline": "By tomorrow",
+          "decision": "commitment",
+          "starts": [353.54],
+          "review_note": "An implicit commitment with the task established in the preceding segment."
+        },
+        {
+          "event": "Discuss reprioritizing work for data export",
+          "owner": "Product owner and development team",
+          "task": "Discuss the data export request against existing sprint commitments.",
+          "deadline": "Later today, during sprint planning",
+          "decision": "commitment",
+          "starts": [400.54],
+          "review_note": "Anchor on the team's acceptance, with the task and timing in the preceding request."
+        }
+      ]
+    }
+  }
+}
